@@ -24,6 +24,15 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .home__name {
@@ -34,7 +43,7 @@
 }
 
 .home__name--last {
-  color: #c91971;
+  color: #df6da6;
   font-weight: 600;
   font-size: 3rem;
 }
@@ -174,7 +183,7 @@
 }
 
 .nav .menu-nav__item.activ > a {
-  color: #c91971;
+  color: #df6da6;
 }
 
 .nav .menu-nav__link {
@@ -188,7 +197,7 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #c91971;
+  color: #df6da6;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -262,7 +271,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #c91971;
+  border-bottom: 5px solid #df6da6;
 }
 
 .about .jobs__job h2, .about .jobs__job h3 {
@@ -330,7 +339,7 @@
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #c91971;
+  border-bottom: 5px solid #df6da6;
   overflow: hidden;
   cursor: pointer;
 }
@@ -346,7 +355,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #c91971;
+  background: #df6da6;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -441,11 +450,88 @@
   margin-top: 2rem;
 }
 
+.gallery {
+  padding-bottom: 2rem;
+}
+
+.gallery__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../dist/img/2018/disco-1024x682.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../dist/img/2018/disco-1024x682.jpg") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.gallery__bio-image p {
+  margin-bottom: 2rem;
+}
+
+.gallery__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.gallery__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.gallery .jobs {
+  width: 80vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.gallery .jobs__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #df6da6;
+}
+
+.gallery .jobs__job h2, .gallery .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+
+.gallery .jobs__job h6 {
+  margin: 0.3rem 0;
+}
+
+.gallery .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
 body {
   background: #272727;
   color: #fff;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1;
 }
 
@@ -459,7 +545,7 @@ a {
 }
 
 .text-secondary {
-  color: #c91971;
+  color: #df6da6;
 }
 
 header {
@@ -487,7 +573,7 @@ main .social-icons a {
 }
 
 main .social-icons a:hover {
-  color: #c91971;
+  color: #df6da6;
 }
 
 footer {
