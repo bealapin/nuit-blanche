@@ -2,7 +2,7 @@
     padding-bottom: 2rem;
   
     .showcase {
-      padding-top: 3rem;
+      margin-top: 3rem;
     }
       .text-secondary {
         font-size: 2rem;
@@ -20,7 +20,7 @@
   
     &__item {
       position: relative;
-      border-bottom: 5px solid $secondary-color;
+      border-bottom: 3px solid $secondary-color;
       overflow: hidden;
       cursor: pointer;
   
