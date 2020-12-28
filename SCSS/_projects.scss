@@ -27,13 +27,20 @@
       img {
         width: 100%;
       }
-  
+     
+      a {
+        &:hover {
+          color: $secondary-color;
+        }
+      }
       .author {
         margin-top: 1rem;
         margin-bottom: 0.3rem;
       }
     }
 }
+
+
     .social-icons {
       display: flex;
       flex-direction: column;
