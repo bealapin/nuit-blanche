@@ -1,14 +1,10 @@
 .projects {
     padding-bottom: 2rem;
   
-    .showcase {
-      margin-top: 3rem;
-    }
       .text-secondary {
         font-size: 2rem;
         margin-bottom: 2rem;
       }
-   
   
     &__items {
       width: 60vw;
@@ -28,11 +24,7 @@
         width: 100%;
       }
      
-      a {
-        &:hover {
-          color: $secondary-color;
-        }
-      }
+     
       .author {
         margin-top: 1rem;
         margin-bottom: 0.3rem;
@@ -40,7 +32,11 @@
     }
 }
 
-
+a {
+  &:hover {
+    color: $secondary-color;
+  }
+}
     .social-icons {
       display: flex;
       flex-direction: column;

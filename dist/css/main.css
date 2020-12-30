@@ -224,10 +224,6 @@
   padding-bottom: 2rem;
 }
 
-.projects .showcase {
-  margin-top: 3rem;
-}
-
 .projects .text-secondary {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -254,13 +250,13 @@
   width: 100%;
 }
 
-.projects__item a:hover {
-  color: #943563;
-}
-
 .projects__item .author {
   margin-top: 1rem;
   margin-bottom: 0.3rem;
+}
+
+a:hover {
+  color: #943563;
 }
 
 .social-icons {
